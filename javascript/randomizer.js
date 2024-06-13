@@ -7,12 +7,12 @@ function getRandomInt(min, max) {
 
 
 window.onload = function() {
-    const chance = Math.floor(Math.random() * 100)
+    const chance = Math.floor(Math.random() * 12)
     const lmd = Math.floor(Math.random() * 400)
-    console.log(chance)
-    if (chance === 69) {
+    console.log('Chance: ' + chance)
+    if (chance === 5 || chance === 4 || chance === 3 || chance === 2 || chance === 1) {
         randNum = getRandomInt(1, 7)
-        console.log(randNum)
+        console.log('RanNum: ' + randNum)
         if (randNum === 1) {
             document.body.style.backgroundImage = "url('./assets/img/r1.png')"
             console.log('Image 1')
