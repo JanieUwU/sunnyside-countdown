@@ -67,8 +67,8 @@ h6 {
 
 body {
     background: fixed;
-    background-image: url('../assets/img/r1.png');
-    background-size: cover;
+    background-image: url('../assets/img/SunnySide_Acorn_Pattern_Dark4.png');
+    background-size: repeat;
     background-blend-mode: overlay;
     /* box-shadow: inset 0 0 0 1000px var(--background-box-shadow); */
     display: block;

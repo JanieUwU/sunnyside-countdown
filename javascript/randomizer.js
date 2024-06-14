@@ -10,9 +10,10 @@ window.onload = function() {
     const chance = Math.floor(Math.random() * 12)
     const lmd = Math.floor(Math.random() * 400)
     console.log('Chance: ' + chance)
-    if (chance === 5 || chance === 4 || chance === 3 || chance === 2 || chance === 1) {
-        randNum = getRandomInt(1, 7)
+    if ([1, 2, 3, 4, 5, 6, 7, 8].includes(chance)) {
+        randNum = getRandomInt(1, 8)
         console.log('RanNum: ' + randNum)
+        document.body.style.backgroundSize = 'cover'
         if (randNum === 1) {
             document.body.style.backgroundImage = "url('./assets/img/r1.png')"
             console.log('Image 1')
@@ -40,6 +41,10 @@ window.onload = function() {
         if (randNum === 7) {
             document.body.style.backgroundImage = "url('./assets/img/TheWalk_v2.jpg')"
             console.log('Image 7')
+        }
+        if (randNum === 8) {
+            document.body.style.backgroundImage = "url('./assets/img/wilderness.png')"
+            console.log('Image 8')
         }
     }
     console.log(lmd)
