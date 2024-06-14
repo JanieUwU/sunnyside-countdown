@@ -14,6 +14,7 @@ window.onload = function() {
         randNum = getRandomInt(1, 8)
         console.log('RanNum: ' + randNum)
         document.body.style.backgroundSize = 'cover'
+        document.body.style.backgroundColor = '#0280904d'
         if (randNum === 1) {
             document.body.style.backgroundImage = "url('./assets/img/r1.webp')"
             console.log('Image 1')
