@@ -104,10 +104,6 @@ p {
 }
 
 /* Page section styles */
-.page-section {
-    margin-top: 80px; /* Add margin to account for the header height */
-    padding: 20px; /* Add padding for better layout */
-}
 
 .container {
     margin-top: 80px; /* Add margin to account for the header height */
