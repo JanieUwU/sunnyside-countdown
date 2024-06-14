@@ -3,6 +3,29 @@
 @font-face {
     font-family: 'BP-Replay';
     src: url('../assets/font/BPreplay.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BP-Replay';
+    src: url('../assets/font/BPreplayItalics.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BP-Replay';
+    src: url('../assets/font/BPreplayBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BP-Replay';
+    src: url('../assets/font/BPreplayBoldItalics.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
 }
 
 /* :root {
