@@ -25,15 +25,15 @@ window.onload = function() {
         }
         if (randNum === 3) {
             document.body.style.backgroundImage = "url('./assets/img/r3.webp')"
-            console.log('Image 2')
+            console.log('Image 3')
         }
         if (randNum === 4) {
             document.body.style.backgroundImage = "url('./assets/img/r4.webp')"
-            console.log('Image 3')
+            console.log('Image 4')
         }
         if (randNum === 5) {
             document.body.style.backgroundImage = "url('./assets/img/r5.webp')"
-            console.log('Image 4')
+            console.log('Image 5')
         }
         if (randNum === 6) {
             document.body.style.backgroundImage = "url('./assets/img/r6.webp')"
