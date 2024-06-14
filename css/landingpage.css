@@ -109,6 +109,11 @@ p {
     padding: 20px; /* Add padding for better layout */
 }
 
+.container {
+    margin-top: 80px; /* Add margin to account for the header height */
+    padding: 20px; /* Add padding for better layout */
+}
+
 .m-0 {
     margin: 0 !important;
 }
@@ -231,6 +236,9 @@ a:hover {
     }
     .page-section {
         margin-top: calc(60px + 20px); /* Adjust margin for mobile header height + padding */
+    }
+    .container {
+        margin-top: calc(60px + 20px);
     }
 }
 
