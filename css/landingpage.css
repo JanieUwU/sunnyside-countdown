@@ -94,12 +94,15 @@ p {
 .furchella-text-branding {
     white-space: nowrap;
     flex: 1;
-    font-family: 'BP-Replay', cursive;
+    font-family: 'BP-Replay';
+    font-style: italic;
+    font-weight: bold;
     color: #ffffff;
 }
 .brand-tm {
     color: #ffffff;
     font-size: 0.6em;
+    flex: 1;
     margin-left: -15px;
 }
 
