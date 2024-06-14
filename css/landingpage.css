@@ -178,6 +178,12 @@ a:hover {
 .header .social-buttons {
     display: flex;
     gap: 10px; /* Space between social buttons */
+    z-index: 1;
+}
+
+.header .furchella-text {
+    flex: 1; /* Allow it to grow and fill space */
+    z-index: 1; /* Ensure it stays on top */
 }
 
 .header .timer-section {
@@ -186,6 +192,42 @@ a:hover {
     transform: translateX(-50%);
     text-align: center;
     z-index: 0; /* Ensure it stays behind other elements if necessary */
+}
+
+/* Example responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+    .header .furchella-text,
+    .header .timer-section,
+    .header .social-buttons {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+    .header .timer-section {
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove transform */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+    .header .social-buttons {
+        justify-content: center;
+        margin-top: 10px; /* Add margin for spacing */
+    }
+    .header h1 {
+        font-size: 1.5rem; /* Reduce font size if needed */
+    }
+    .header .timer-section .timer {
+        font-size: 1.5rem; /* Adjust font size for timer */
+    }
+    .header img {
+        width: 30px; /* Adjust icon size */
+        height: 30px; /* Adjust icon size */
+    }
 }
 
 
