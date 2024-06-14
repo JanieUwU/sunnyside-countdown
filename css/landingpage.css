@@ -54,7 +54,7 @@
     --background-box-shadow: rgba(0, 0, 0, 0.603);
     --donation-btn-color: #7ad9ff34;
     --donation-btn-color-hover: #ffffff93;
-    --text-color-hover: #000000b6;
+    --text-color-hover: #e56b6fe3;
 }
 
 h6 {
@@ -101,6 +101,12 @@ p {
     color: #ffffff;
     font-size: 0.6em;
     margin-left: -15px;
+}
+
+.disclaimer {
+    font-weight: bold;
+    font-style: italic;
+    color: #e56b6f;
 }
 
 /* Page section styles */
