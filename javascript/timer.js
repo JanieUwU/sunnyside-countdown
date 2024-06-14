@@ -1,5 +1,33 @@
 // Set the target date for the countdown (provided timestamp: 1692388800)
 const targetDate = new Date('June 14, 2024 10:00:00 GMT-0700').getTime(); // Convert UNIX timestamp to milliseconds
+let confettiDropped = false
+
+// Function to trigger confetti animation
+function triggerConfetti() {
+    var duration2 = 30 * 1000;
+    var end2 = Date.now() + duration2;
+    console.log('DateNow: ' + Date.now())
+    console.log('DateEND: ' + end2)
+
+    (function frame() {
+        confetti({
+            particleCount: 3,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 }
+        });
+        confetti({
+            particleCount: 3,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 }
+        });
+
+        if (Date.now() < end2) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
 
 // Update the countdown every second
 const countdownInterval = setInterval(function() {
@@ -30,5 +58,9 @@ if (distance < 0) {
     countdownElement.innerHTML = "Get the Game!";
     countdownTimerLink.href = "https://store.steampowered.com/app/1746930/SunnySide/"
     countdownElement.style.textDecoration = "underline"
+    if (!confettiDropped) {
+        confettiDropped = true
+        triggerConfetti()
+    }
 }
 }, 1000);
