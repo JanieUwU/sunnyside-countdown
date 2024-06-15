@@ -99,6 +99,9 @@ p {
     font-weight: bold;
     color: #ffffff;
 }
+.furchella-text-branding:hover {
+    color: var(--text-color-hover);
+}
 .brand-tm {
     color: #ffffff;
     font-size: 0.6em;
