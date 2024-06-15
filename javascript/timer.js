@@ -55,7 +55,18 @@ countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 // If the countdown is over, display a message
 if (distance < 0) {
     clearInterval(countdownInterval);
-    countdownElement.innerHTML = "Get the Game!";
+    const defaultColor = "#ffffff";
+    const hoverColor = "#e56b6fe3";
+    // Add event listener for mouseover (hover) event
+    countdownElement.addEventListener("mouseover", function() {
+        countdownElement.style.color = hoverColor;
+    });
+
+    // Add event listener for mouseout (hover end) event
+    countdownElement.addEventListener("mouseout", function() {
+        countdownElement.style.color = defaultColor;
+    });
+    countdownElement.innerHTML = "Sunnyside is now available!";
     countdownTimerLink.href = "https://store.steampowered.com/app/1746930/SunnySide/"
     countdownElement.style.textDecoration = "underline"
     if (!confettiDropped) {
