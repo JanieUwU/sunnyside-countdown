@@ -4,7 +4,7 @@ let confettiDropped = false
 
 // Function to trigger confetti animation
 function triggerConfetti() {
-    var duration2 = 30 * 1000;
+    var duration2 = 15 * 1000;
     var end2 = Date.now() + duration2;
     console.log('DateNow: ' + Date.now())
     console.log('DateEND: ' + end2)
