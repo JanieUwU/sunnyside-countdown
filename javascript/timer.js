@@ -1,5 +1,5 @@
 // Set the target date for the countdown (provided timestamp: 1692388800)
-const targetDate = new Date('June 14, 2024 10:00:00 GMT-0700').getTime(); // Convert UNIX timestamp to milliseconds
+const targetDate = new Date('August 16, 2024 10:00:00 GMT-0700').getTime(); // Convert UNIX timestamp to milliseconds
 let confettiDropped = false
 
 // Function to trigger confetti animation
