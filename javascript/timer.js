@@ -67,7 +67,7 @@ if (distance < 0) {
         countdownElement.style.color = defaultColor;
     });
     countdownElement.innerHTML = "Sunnyside is now available!";
-    countdownTimerLink.href = "https://store.steampowered.com/app/1746930/SunnySide/"
+    countdownTimerLink.href = "https://discord.com/invite/SunnySide"
     countdownElement.style.textDecoration = "underline"
     if (!confettiDropped) {
         confettiDropped = true
